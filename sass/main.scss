@@ -1,0 +1,41 @@
+
+$titleFont: 'Arvo', serif;
+$bodyFont:  'Raleway', sans-serif;
+$darkBack: #1C1D21;
+$darkHighlight: #31353D;
+$lightText: #EEEFF7;
+$lightLowlight: #E0EAEC;
+
+
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+body{
+  background-color: $darkBack;
+}
+
+h1{
+  font-family: $titleFont;
+  color: $lightText;
+  text-align: center;
+  font-size: 2em;
+}
+h2{
+  font-family: $titleFont;
+  color: $lightText;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+// HEADER
+
+#headerBack{
+  height: 220px;
+  width: 100%;
+}
