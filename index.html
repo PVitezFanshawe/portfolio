@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/app.css">
   </head>
   <body>
-
+<div id="siteWrap">
     <header>
       <div id="headerBack">
         <h1 class="mainTitle">Peter Vitez</h1>
@@ -19,18 +19,31 @@
 
 
 
-      <div class="row expanded" data-sticky-container>
-      <nav class="small-12 large-12 columns" data-sticky data-margin-top='0' data-options="stickyOn: small" data-top-anchor="headerBack:bottom" id="mainNav">
-        <div id="navToggle">
-          <img src="images/navHam.svg" alt="navigation expand icon">
-          <h2>Find Your Way</h2>
-        </div>
+      <div class="row " data-sticky-container>
+
+      <div class=" show-for-large large-12 columns" data-sticky data-margin-top='0' data-options="stickyOn: small" data-top-anchor="headerBack:bottom" id="mainNavLarge">
         <ul>
-          <li><a href="#">My Work</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-      </nav>
+          <li><a href="#"><span>- </span>My Work<span> -</span></a></li>
+          <li><a href="#"><span>- </span>About<span>  -</span></a></li>
+          <li><a href="#"><span>- </span>Contact<span> -</span></a></li>
+        </ul>
+      </div>
+      <div class="small-12 hide-for-large columns" data-sticky data-margin-top='0' data-options="stickyOn: small" data-top-anchor="headerBack:bottom" id="mainNavSmall">
+
+          <div id="navToggle">
+            <img src="images/navHam.svg" alt="navigation expand icon">
+            <h2>Find Your Way</h2>
+          </div>
+
+          <ul>
+            <li><a href="#">My Work</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+      </div>
     </div>
+
     </header>
 
     <section class="rows">
@@ -38,25 +51,16 @@
     </section>
 
     <section class="rows">
-      <div class="portItem small-12 medium-6 large-4 columns">
+      <div class="portItem small-12 medium-6  columns">
          <img src="images/portItem.svg" alt="Portfolio Item">
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reiciendis eaque voluptatem expedita, blanditiis non dolorum et quae nemo harum dicta. Sapiente culpa earum praesentium.</p>
       </div>
 
-      <div class="portItem small-12 medium-6 large-4 columns">
+      <div class="portItem small-12 medium-6  columns">
          <img src="images/portItem.svg" alt="Portfolio Item">
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reiciendis eaque voluptatem expedita, blanditiis non dolorum et quae nemo harum dicta. Sapiente culpa earum praesentium.</p>
       </div>
 
-      <div class="portItem small-12 medium-6 large-4 columns">
-         <img src="images/portItem.svg" alt="Portfolio Item">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reiciendis eaque voluptatem expedita, blanditiis non dolorum et quae nemo harum dicta. Sapiente culpa earum praesentium.</p>
-      </div>
-
-      <!-- <div class="portItem small-12 medium-6 large-4 columns">
-         <img src="images/portItem.svg" alt="Portfolio Item">
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reiciendis eaque voluptatem expedita, blanditiis non dolorum et quae nemo harum dicta. Sapiente culpa earum praesentium.</p>
-      </div> -->
     </section>
 
     <section class="rows infoBlurb">
@@ -89,10 +93,10 @@
       </form>
     </section>
 
-    <div>
-      <h3>Back to top</h3>
+    <div id="backToTop" class="rows">
+      <a class="small-12 hide-for-large columns" href="#siteWrap"><h3>Back to top</h3></a>
     </div>
-
+</div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
