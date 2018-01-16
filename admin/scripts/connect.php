@@ -7,14 +7,14 @@
 	$pass = ""; // FOR PC ONLY
 //	$pass = "root"; FOR MAC ONLY
 	$url = "localhost";
-	$db = "db_movies";
+	$db = "db_portfolio";
 
 	// Creates an access package to our database
 	$link = mysqli_connect($url, $user, $pass, $db); // "8888" needed on MAC
 
 	// Check Connection w/ error message
 	if(mysqli_connect_errno()) {
-		printf("Connection FAILED: %s\n", mysqli_connect_error());
+		echo 'Failed to connect to mySQL'. mysqli_connect_error();
 		exit(); // forces an exit just incase things get caught in a loop
 	}
 
